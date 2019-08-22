@@ -9,14 +9,12 @@
 // ==/UserScript==
 
 
-// Click the bell icon at the top right.
 function clickNotificationButton() {
         document.querySelector('button[data-test-id="header-notifications-button"]').click();
         // Blur the button, otherwise clicking again will just focus it.
         document.querySelector('button[data-test-id="header-notifications-button"]').blur();
 }
 
-// Click "Mark All as Read" in the notifications panel.
 function clickMarkAllAsRead() {
     document.querySelector('button[data-test-id="mark-all-read-button"]').click();
 }
